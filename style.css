@@ -1,8 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'poppins', sans-serif;
-    box-sizing: border-box;
+font-family: 'Arial', sans-serif;    box-sizing: border-box;
 }
 .container{
     width: 100%;
@@ -191,4 +190,136 @@ form button{
     margin: 10px;
     cursor: pointer;
     background-color: black;
+}
+@media (max-width: 1024px) {
+
+    .product {
+        max-width: 900px;
+    }
+
+    .gallery {
+        flex-basis: 45%;
+        transform: scale(1);
+        gap: 20px;
+    }
+
+    .gallery img {
+        max-width: 320px;
+    }
+
+    .details {
+        flex-basis: 55%;
+        padding: 30px;
+        padding-left: 40px;
+    }
+
+    .details h1 {
+        font-size: 30px;
+        margin-top: 5%;
+    }
+
+    .details h2 {
+        font-size: 34px;
+    }
+
+    .details h3 {
+        margin-left: 0;
+        margin-top: 5px;
+    }
+}
+@media (max-width: 768px) {
+
+    .product {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gallery {
+        flex-basis: 100%;
+        justify-content: center;
+        box-shadow: none;
+    }
+
+    .gallery img {
+        max-width: 100%;
+    }
+
+    .details {
+        flex-basis: 100%;
+        padding: 25px;
+        box-shadow: none;
+        margin-top: 20px;
+    }
+
+    .details h1 {
+        font-size: 26px;
+        margin-top: 0;
+    }
+
+    .details h2 {
+        font-size: 28px;
+        margin-top: 10px;
+    }
+
+    .details h3 {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .size-select,
+    .color-select,
+    .quantity-select {
+        flex-wrap: wrap;
+    }
+
+    .size-select p,
+    .color-select p,
+    .quantity-select p {
+        width: 100%;
+        margin-bottom: 5px;
+        font-size: 16px;
+    }
+
+    form button {
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    .controls {
+        bottom: 15px;
+        right: 15px;
+    }
+}
+@media (max-width: 480px) {
+
+    .details {
+        padding: 20px;
+        font-size: 14px;
+    }
+
+    .details p {
+        font-size: 14px;
+    }
+
+    .details h1 {
+        font-size: 22px;
+    }
+
+    .details h2 {
+        font-size: 24px;
+    }
+
+    .size-select span {
+        padding: 5px;
+        margin-right: 8px;
+    }
+
+    .color-select span {
+        width: 13px;
+        height: 13px;
+    }
+
+    .quantity-select input {
+        width: 45px;
+    }
 }
